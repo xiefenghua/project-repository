@@ -1,0 +1,41 @@
+version: "3.3"
+services:
+  zipkin:
+    image: openzipkin/zipkin
+    ports:
+      - "9411:9411"
+    deploy:
+      replicas: 2
+  leaf:
+    image: leaf:latest # leaf
+    ports:
+      - "8081:8081"
+    deploy:
+      replicas: 4
+  usercenter:
+    image: usercenter:latest #指定镜像 5A统一认证中心
+    ports: # 向外暴露端口映射 容器：主机
+      - "10081:10081"
+    deploy: #docker swarm 环境下生效，集群机器数
+      replicas: 4 #副本数量
+    depends_on: # 依赖 leaf 服务
+      - zipkin
+      - leaf
+  rentcenter:
+    image: rentcenter:latest #指定镜像 租户中心
+    ports: # 向外暴露端口映射 容器：主机
+      - "10082:10082"
+    deploy: #docker swarm 环境下生效，集群机器数
+      replicas: 4 #副本数量
+    depends_on: # 依赖 leaf 服务
+      - zipkin
+      - leaf
+  operationcenter:
+    image: operationcenter:latest #指定镜像 运营中心
+    ports: # 向外暴露端口映射 容器：主机
+      - "10083:10083"
+    deploy: #docker swarm 环境下生效，集群机器数
+      replicas: 4 #副本数量
+    depends_on: # 依赖 leaf 服务
+      - zipkin
+      - leaf

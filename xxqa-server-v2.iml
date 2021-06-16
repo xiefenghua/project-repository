@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
+    <output url="file://$MODULE_DIR$/target/classes" />
+    <output-test url="file://$MODULE_DIR$/target/test-classes" />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/Leaf-master/leaf-core/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Leaf-master/leaf-core/src/test" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/Leaf-master/leaf-server/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Leaf-master/leaf-server/src/main/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/Leaf-master/leaf-server/src/test" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/im-center-api/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/im-center/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/im-center/src/main/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/xxl-job/xxl-job-admin/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/xxl-job/xxl-job-admin/src/main/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/xxl-job/xxl-job-admin/src/test" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/xxl-job/xxl-job-core/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/xxl-job/xxl-job-executor-samples/xxl-job-executor-sample-frameless/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/xxl-job/xxl-job-executor-samples/xxl-job-executor-sample-frameless/src/main/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/xxl-job/xxl-job-executor-samples/xxl-job-executor-sample-frameless/src/test" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/xxl-job/xxl-job-executor-samples/xxl-job-executor-sample-springboot/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/xxl-job/xxl-job-executor-samples/xxl-job-executor-sample-springboot/src/main/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/xxl-job/xxl-job-executor-samples/xxl-job-executor-sample-springboot/src/test" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/xxqa-codemachine/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/xxqa-codemachine/src/main/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/xxqa-common-es/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/xxqa-common-es/src/main/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/xxqa-common-redis/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/xxqa-common-sms/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/xxqa-common-sms/src/main/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/xxqa-gateway/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/xxqa-gateway/src/main/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/xxqa-gateway/src/test" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/xxqa-operationcenter/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/xxqa-operationcenter/src/main/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/xxqa-rentcenter-api/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/xxqa-rentcenter/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/xxqa-rentcenter/src/main/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/xxqa-usercenter-api/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/xxqa-usercenter/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/xxqa-usercenter/src/main/resources" type="java-resource" />
+      <excludeFolder url="file://$MODULE_DIR$/im-center/target" />
+      <excludeFolder url="file://$MODULE_DIR$/xxqa-usercenter/target" />
+      <excludeFolder url="file://$MODULE_DIR$/xxqa-usercenter-api/target" />
+      <excludeFolder url="file://$MODULE_DIR$/xxqa-rentcenter-common/target" />
+      <excludeFolder url="file://$MODULE_DIR$/xxqa-rentcenter-api/target" />
+      <excludeFolder url="file://$MODULE_DIR$/xxqa-rentcenter/target" />
+      <excludeFolder url="file://$MODULE_DIR$/xxqa-operationcenter-common/target" />
+      <excludeFolder url="file://$MODULE_DIR$/xxqa-operationcenter-api/target" />
+      <excludeFolder url="file://$MODULE_DIR$/xxqa-common-sms/target" />
+      <excludeFolder url="file://$MODULE_DIR$/xxqa-common-redis/target" />
+      <excludeFolder url="file://$MODULE_DIR$/xxqa-common-es/target" />
+      <excludeFolder url="file://$MODULE_DIR$/xxqa-codemachine/target" />
+      <excludeFolder url="file://$MODULE_DIR$/im-center-common/target" />
+      <excludeFolder url="file://$MODULE_DIR$/im-center-api/target" />
+      <excludeFolder url="file://$MODULE_DIR$/xxqa-operationcenter/target" />
+      <excludeFolder url="file://$MODULE_DIR$/xxqa-gateway/target" />
+      <excludeFolder url="file://$MODULE_DIR$/target" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

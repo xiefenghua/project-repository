@@ -1,0 +1,68 @@
+spring:
+  profiles: dev
+  lifecycle:
+    timeout-per-shutdown-phase: 60s #设置缓冲期，最大等待时间
+  application:
+    name: xxqa-gateway
+  main:
+    allow-bean-definition-overriding: true
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          jwk-set-uri: 'http://localhost:10080/getPublicKey'
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    password: hiwitech@redis123
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+#      config:
+#        server-addr: 121.196.145.48:8848
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+      routes:
+        - id: xxqa-usercenter
+          uri: lb://usercenter
+          predicates:
+            - Path=/uc/**
+          filters:
+            - SwaggerHeaderFilter
+            - StripPrefix=1 #去除 path 第一个前缀
+        - id: xxqa-rentcenter
+          uri: lb://rentcenter
+          predicates:
+            - Path=/rc/**
+          filters:
+            - StripPrefix=1 #去除 path 第一个前缀
+#            - name: Hystrix
+#              args:
+#                name: default
+#                fallbackUri: forward:/defaultFallback # 只有该id下的服务会降级
+
+logging:
+  file:
+    path: ../logs/xxqa-gateway
+  level:
+    com.security.im: DEBUG
+    org.springframework.cloud.gateway: TRACE
+    org.springframework.http.server.reactive: DEBUG
+    org.springframework.web.reactive: DEBUG
+    reactor.ipc.netty: DEBUG
+    reactor.netty: DEBUG
+
+# 配置白名单路径(无需登录)
+whitelist:
+  urls:
+    - /uc/oauth/token
+    - /webjars/**
+    - /doc.html
+    - /swagger-resources/**
+    - /*/v2/api-docs
+    - /uc/user/login/getAuthCode
+    - /uc/clogin
